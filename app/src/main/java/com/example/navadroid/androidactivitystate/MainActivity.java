@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         bindView();
 
         // Check whether we're recreating a previously destroyed instance
-        if (savedInstanceState != null) {
+        /*if (savedInstanceState != null) {
             // Restore value of members from saved state
             myString = savedInstanceState.getString("mySavedString");
             Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             myString = null;
             Log.d(TAG, "onCreate() called with: myString = [" + myString + "]");
         }
+        */
     }
 
     private void bindView(){
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        resetView();
+        //resetView();
         Log.d(TAG, "onResume() called");
     }
 
